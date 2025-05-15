@@ -1,4 +1,3 @@
-# roboflow_downloader.py
 import os
 from roboflow import Roboflow
 from pathlib import Path
@@ -23,6 +22,6 @@ class RoboflowDownloader:
         try:
             project_obj = self.rf.workspace(workspace).project(project)
             project_obj.version(version).download(format=format, location=str(output_dir))
-            print(f"[Roboflow] ✅ Downloaded '{class_name}' dataset to: {output_dir}")
+            print(f"[Roboflow] Downloaded '{class_name}' dataset to: {output_dir}")
         except Exception as e:
-            print(f"[Roboflow] ❌ Failed to download '{class_name}': {e}")
+            print(f"[Roboflow] Failed to download '{class_name}': {e}")

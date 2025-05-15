@@ -12,6 +12,7 @@ load_dotenv()
 
 class Pipeline:
     def __init__(self, config_path):
+        """Initialize the pipeline with configuration and Redis connection"""
         self.config_path = config_path
         with open(config_path) as f:
             self.config = yaml.safe_load(f)
@@ -51,7 +52,7 @@ class Pipeline:
             scheduled_time=datetime.utcnow(),
             func=run_reddit_job,
             args=(self.config_path,),
-            interval=reddit_interval,  # Now passing integer seconds
+            interval=reddit_interval,
             queue_name='default',
             meta={'description': 'Reddit image download'}
         )

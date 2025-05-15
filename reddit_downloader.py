@@ -17,9 +17,11 @@ class RedditImageDownloader:
     
     @staticmethod
     def is_image_url(url: str) -> bool:
+        """Check if the URL is an image URL."""
         return url.endswith((".jpg", ".jpeg", ".png"))
     
     def download_image(self, url: str, path: str) -> bool:
+        """Download an image from a URL and save it to a specified path."""
         try:
             img_data = requests.get(url, timeout=10).content
             with open(path, "wb") as f:
@@ -37,6 +39,7 @@ class RedditImageDownloader:
         output_dir: str,
         limit_per_subreddit: int = 1000
     ) -> None:
+        """Scrape a subreddit for images matching specified keywords."""
         print(f"\nScraping subreddit: {subreddit_name}")
         subreddit = self.reddit.subreddit(subreddit_name)
         
@@ -57,7 +60,6 @@ class RedditImageDownloader:
                         time.sleep(random.uniform(1, 3))
 
 def main():
-    # Configuration (Move to config.yaml later)
     credentials = {
         "client_id": "nnU4497d0saUdjXMTxAQcg",
         "client_secret": "qdForicKYGjwC0jkIlq0rzUK8BAkLg",
@@ -65,7 +67,6 @@ def main():
         "password": "Victorfrank@04"
     }
     
-    # Define your classes and related subreddits
     CLASS_CONFIG = {
         "squirrel": {
             "subreddits": ["squirrels", "aww", "nature", "AnimalsBeingBros"],

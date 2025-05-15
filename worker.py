@@ -7,7 +7,7 @@ import socket
 import os
 import time
 
-# Configure detailed logging
+# Configure logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s [%(levelname)s] %(message)s',
@@ -43,15 +43,15 @@ def start_worker():
             job_monitoring_interval=5  # Check for new jobs every 5 seconds
         )
         
-        logging.info(f"🚀 Starting worker {worker_name}")
-        logging.info(f"🔗 Connected to Redis at localhost:6379")
-        logging.info(f"👂 Listening on queue: default")
+        logging.info(f"Starting worker {worker_name}")
+        logging.info(f"onnected to Redis at localhost:6379")
+        logging.info(f"Listening on queue: default")
         
         # Start working (burst=False for continuous operation)
         worker.work(with_scheduler=True)
         
     except Exception as e:
-        logging.error(f"❌ Worker failed: {str(e)}")
+        logging.error(f"Worker failed: {str(e)}")
         raise
 
 if __name__ == "__main__":

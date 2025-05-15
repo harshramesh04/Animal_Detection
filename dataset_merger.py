@@ -107,7 +107,7 @@ class DatasetMerger:
                 # Process image
                 img = cv2.imread(img_path)
                 if img is None:
-                    print(f"⚠️ Failed to read image: {img_path}")
+                    print(f"Failed to read image: {img_path}")
                     continue
                     
                 resized = cv2.resize(img, self.target_size, interpolation=cv2.INTER_LINEAR)
