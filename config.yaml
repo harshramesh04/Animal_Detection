@@ -1,0 +1,60 @@
+output_base: "./output"
+
+
+scheduling:
+  reddit_interval_hours: 6
+  roboflow_interval_hours: 24
+
+parallelism:
+  workers: 4
+
+reddit_credentials:
+  client_id: "nnU4497d0saUdjXMTxAQcg"
+  client_secret: "qdForicKYGjwC0jkIlq0rzUK8BAkLg"
+  username: "Victorfrank_04"
+  password: "Victorfrank@04"
+
+roboflow_api_key: "evIlwvwMqO9Y0lqlmCxh"
+
+rate_limits:
+  reddit: 5
+  roboflow: 3
+
+download_limits:
+  reddit: 50
+
+reddit_classes:
+  squirrel:
+    subreddits: ["squirrels", "aww", "nature", "AnimalsBeingBros"]
+    keywords: ["squirrel"]
+  snake:
+    subreddits: ["snakes", "reptiles", "nature", "AnimalsBeingDerps"]
+    keywords: ["snake", "cobra", "python", "viper"]
+  raccoon:
+    subreddits: ["raccoons", "aww", "AnimalsBeingBros"]
+    keywords: ["raccoon", "trash panda"]
+
+roboflow_classes:
+  snake:
+    workspace: "animal-datasets"
+    project: "snake-images"
+    version: 1
+  raccoon:
+    workspace: "animal-datasets"
+    project: "raccoon-images"
+    version: 2
+  squirrel:
+    workspace: "animal-datasets"
+    project: "squirrel-images"
+    version: 3
+
+split_ratios: [0.7, 0.2, 0.1]
+target_size: [640, 640]
+class_names: ["snake", "raccoon", "squirrel"]
+
+validation:
+  min_object_size: 20
+  filter_small_objects: true
+  small_object_threshold: 15
+
+existing_datasets: []

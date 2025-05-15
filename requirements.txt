@@ -1,0 +1,12 @@
+opencv_python==4.11.0.86
+opencv_python_headless==4.10.0.84
+praw==7.8.1
+python-dotenv==1.1.0
+PyYAML==6.0.2
+PyYAML==6.0.2
+redis==6.1.0
+Requests==2.32.3
+roboflow==1.1.63
+rq==2.3.3
+rq_scheduler==0.14.0
+tqdm==4.67.1

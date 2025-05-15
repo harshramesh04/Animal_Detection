@@ -1,0 +1,27 @@
+2025-05-14 15:20:34,888 - INFO - Worker rq:worker:pipeline_worker started with PID 6440, version 2.3.3
+2025-05-14 15:20:34,888 - INFO - Subscribing to channel rq:pubsub:pipeline_worker
+2025-05-14 15:20:34,889 - INFO - *** Listening on [32mdefault[39;49;00m...
+2025-05-14 15:20:34,890 - INFO - Cleaning registries for queue: default
+2025-05-14 15:34:05,021 - INFO - Cleaning registries for queue: default
+2025-05-15 10:13:44,218 [INFO] Worker rq:worker:worker_LAPTOP-9D1D5LE1_24696_1747318424 started with PID 24696, version 2.3.3
+2025-05-15 10:13:44,218 [INFO] Subscribing to channel rq:pubsub:worker_LAPTOP-9D1D5LE1_24696_1747318424
+2025-05-15 10:13:44,220 [INFO] *** Listening on [32mdefault[39;49;00m...
+2025-05-15 10:13:44,297 [INFO] Cleaning registries for queue: default
+2025-05-15 10:13:44,501 [INFO] Scheduler for default started with PID 10292
+2025-05-15 10:14:38,397 [INFO] Worker rq:worker:worker_LAPTOP-9D1D5LE1_26000_1747318478 started with PID 26000, version 2.3.3
+2025-05-15 10:14:38,397 [INFO] Worker rq:worker:worker_LAPTOP-9D1D5LE1_22720_1747318478 started with PID 22720, version 2.3.3
+2025-05-15 10:14:38,397 [INFO] Subscribing to channel rq:pubsub:worker_LAPTOP-9D1D5LE1_26000_1747318478
+2025-05-15 10:14:38,397 [INFO] Subscribing to channel rq:pubsub:worker_LAPTOP-9D1D5LE1_22720_1747318478
+2025-05-15 10:14:38,398 [INFO] *** Listening on [32mdefault[39;49;00m...
+2025-05-15 10:14:38,398 [INFO] *** Listening on [32mdefault[39;49;00m...
+2025-05-15 10:14:38,400 [INFO] Cleaning registries for queue: default
+2025-05-15 10:14:38,405 [INFO] Worker rq:worker:worker_LAPTOP-9D1D5LE1_20780_1747318478 started with PID 20780, version 2.3.3
+2025-05-15 10:14:38,405 [INFO] Subscribing to channel rq:pubsub:worker_LAPTOP-9D1D5LE1_20780_1747318478
+2025-05-15 10:14:38,408 [INFO] *** Listening on [32mdefault[39;49;00m...
+2025-05-15 10:14:38,415 [INFO] Worker rq:worker:worker_LAPTOP-9D1D5LE1_24500_1747318478 started with PID 24500, version 2.3.3
+2025-05-15 10:14:38,415 [INFO] Subscribing to channel rq:pubsub:worker_LAPTOP-9D1D5LE1_24500_1747318478
+2025-05-15 10:14:38,417 [INFO] *** Listening on [32mdefault[39;49;00m...
+2025-05-15 10:14:38,418 [INFO] Cleaning registries for queue: default
+2025-05-15 10:14:38,425 [INFO] Cleaning registries for queue: default
+2025-05-15 10:15:16,169 [INFO] Scheduler stopping, releasing locks for default...
+2025-05-15 10:15:16,169 [INFO] Scheduler with PID 10292 has stopped
