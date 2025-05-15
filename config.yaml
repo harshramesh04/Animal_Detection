@@ -1,6 +1,5 @@
 output_base: "./output"
 
-
 scheduling:
   reddit_interval_hours: 6
   roboflow_interval_hours: 24
@@ -9,12 +8,12 @@ parallelism:
   workers: 4
 
 reddit_credentials:
-  client_id: "nnU4497d0saUdjXMTxAQcg"
-  client_secret: "qdForicKYGjwC0jkIlq0rzUK8BAkLg"
-  username: "Victorfrank_04"
-  password: "Victorfrank@04"
+  client_id: "${REDDIT_CLIENT_ID}"
+  client_secret: "${REDDIT_CLIENT_SECRET}"
+  username: "${REDDIT_USERNAME}"
+  password: "${REDDIT_PASSWORD}"
 
-roboflow_api_key: "evIlwvwMqO9Y0lqlmCxh"
+roboflow_api_key: "${ROBOFLOW_API_KEY}"
 
 rate_limits:
   reddit: 5
