@@ -21,23 +21,23 @@ class DatasetMerger:
         self.output_folder = os.path.join(self.output_base, f"dataset_{timestamp}")
         
     def run(self):
-        # Step 1: Collect and validate all image-label pairs
+        """Main method to run the dataset merging process"""
         all_pairs = self.collect_pairs()
         
-        # Step 2: Remove duplicates
+        
         unique_pairs = self.remove_duplicates(all_pairs)
         print(f"Found {len(all_pairs)} pairs, {len(unique_pairs)} after removing duplicates")
         
-        # Step 3: Split dataset
+        
         splits = self.split_dataset(unique_pairs)
         
-        # Step 4: Process and save splits
+        
         self.process_splits(splits)
         
-        # Step 5: Create data.yaml
+        
         self.create_yaml()
         
-        print(f"✅ Dataset created at: {self.output_folder}")
+        print(f"Dataset created at: {self.output_folder}")
 
     def collect_pairs(self):
         """Collect all valid (image, label) pairs from input folders"""
@@ -49,7 +49,7 @@ class DatasetMerger:
             label_dir = os.path.join(folder, 'labels')
             
             if not os.path.exists(image_dir) or not os.path.exists(label_dir):
-                print(f"⚠️ Missing images/labels folder in {folder}")
+                print(f"Missing images/labels folder in {folder}")
                 continue
                 
             for ext in image_extensions:
@@ -58,7 +58,7 @@ class DatasetMerger:
                     if os.path.exists(label_path):
                         all_pairs.append((img_path, label_path))
                     else:
-                        print(f"⚠️ Missing label for {img_path}")
+                        print(f"Missing label for {img_path}")
         
         return all_pairs
 
@@ -75,7 +75,7 @@ class DatasetMerger:
                 unique_hashes.add(img_hash)
                 unique_pairs.append((img_path, label_path))
             else:
-                print(f"⚠️ Removed duplicate: {img_path}")
+                print(f"Removed duplicate: {img_path}")
         
         return unique_pairs
 
@@ -115,7 +115,7 @@ class DatasetMerger:
                 img_out_path = os.path.join(img_out_dir, img_filename)
                 cv2.imwrite(img_out_path, resized)
                 
-                # Process label (copy as-is)
+                # Process label
                 lbl_filename = os.path.basename(lbl_path)
                 shutil.copy(lbl_path, os.path.join(lbl_out_dir, lbl_filename))
 
@@ -141,9 +141,9 @@ if __name__ == "__main__":
             r"C:\Users\harsh\OneDrive\Desktop\Drexel\Volunteert\squirrel2.v8i.yolov8\train"
         ],
         'output_base': r"C:\Users\harsh\OneDrive\Desktop\Drexel\Volunteert",
-        'split_ratio': (0.7, 0.2, 0.1),  # train, val, test
+        'split_ratio': (0.7, 0.2, 0.1),
         'target_size': (640, 640),
-        'class_names': ['snake', 'raccoon', 'squirrel']  # Update with your classes
+        'class_names': ['snake', 'raccoon', 'squirrel']
     }
     
     merger = DatasetMerger(config)
