@@ -25,3 +25,39 @@
 2025-05-15 10:14:38,425 [INFO] Cleaning registries for queue: default
 2025-05-15 10:15:16,169 [INFO] Scheduler stopping, releasing locks for default...
 2025-05-15 10:15:16,169 [INFO] Scheduler with PID 10292 has stopped
+2025-05-20 15:18:28,366 [INFO] Starting worker worker_LAPTOP-9D1D5LE1_27072_1747768708
+2025-05-20 15:18:28,366 [INFO] onnected to Redis at localhost:6379
+2025-05-20 15:18:28,367 [INFO] Listening on queue: default
+2025-05-20 15:18:28,367 [INFO] Worker rq:worker:worker_LAPTOP-9D1D5LE1_27072_1747768708 started with PID 27072, version 2.3.3
+2025-05-20 15:18:28,367 [INFO] Subscribing to channel rq:pubsub:worker_LAPTOP-9D1D5LE1_27072_1747768708
+2025-05-20 15:18:28,369 [INFO] *** Listening on [32mdefault[39;49;00m...
+2025-05-20 15:18:28,428 [INFO] Cleaning registries for queue: default
+2025-05-20 15:18:28,647 [INFO] Scheduler for default started with PID 26228
+2025-05-20 15:19:16,085 [INFO] Starting worker worker_LAPTOP-9D1D5LE1_2228_1747768756
+2025-05-20 15:19:16,086 [INFO] onnected to Redis at localhost:6379
+2025-05-20 15:19:16,086 [INFO] Listening on queue: default
+2025-05-20 15:19:16,087 [INFO] Worker rq:worker:worker_LAPTOP-9D1D5LE1_2228_1747768756 started with PID 2228, version 2.3.3
+2025-05-20 15:19:16,087 [INFO] Subscribing to channel rq:pubsub:worker_LAPTOP-9D1D5LE1_2228_1747768756
+2025-05-20 15:19:16,089 [INFO] *** Listening on [32mdefault[39;49;00m...
+2025-05-20 15:19:16,091 [INFO] Cleaning registries for queue: default
+2025-05-20 15:19:16,091 [INFO] Starting worker worker_LAPTOP-9D1D5LE1_27352_1747768756
+2025-05-20 15:19:16,091 [INFO] onnected to Redis at localhost:6379
+2025-05-20 15:19:16,091 [INFO] Listening on queue: default
+2025-05-20 15:19:16,092 [INFO] Worker rq:worker:worker_LAPTOP-9D1D5LE1_27352_1747768756 started with PID 27352, version 2.3.3
+2025-05-20 15:19:16,092 [INFO] Subscribing to channel rq:pubsub:worker_LAPTOP-9D1D5LE1_27352_1747768756
+2025-05-20 15:19:16,094 [INFO] *** Listening on [32mdefault[39;49;00m...
+2025-05-20 15:19:16,096 [INFO] Cleaning registries for queue: default
+2025-05-20 15:19:16,115 [INFO] Starting worker worker_LAPTOP-9D1D5LE1_17908_1747768756
+2025-05-20 15:19:16,115 [INFO] onnected to Redis at localhost:6379
+2025-05-20 15:19:16,115 [INFO] Listening on queue: default
+2025-05-20 15:19:16,116 [INFO] Worker rq:worker:worker_LAPTOP-9D1D5LE1_17908_1747768756 started with PID 17908, version 2.3.3
+2025-05-20 15:19:16,116 [INFO] Subscribing to channel rq:pubsub:worker_LAPTOP-9D1D5LE1_17908_1747768756
+2025-05-20 15:19:16,126 [INFO] Starting worker worker_LAPTOP-9D1D5LE1_27296_1747768756
+2025-05-20 15:19:16,126 [INFO] onnected to Redis at localhost:6379
+2025-05-20 15:19:16,126 [INFO] Listening on queue: default
+2025-05-20 15:19:16,127 [INFO] Worker rq:worker:worker_LAPTOP-9D1D5LE1_27296_1747768756 started with PID 27296, version 2.3.3
+2025-05-20 15:19:16,127 [INFO] Subscribing to channel rq:pubsub:worker_LAPTOP-9D1D5LE1_27296_1747768756
+2025-05-20 15:19:16,128 [INFO] *** Listening on [32mdefault[39;49;00m...
+2025-05-20 15:19:16,129 [INFO] *** Listening on [32mdefault[39;49;00m...
+2025-05-20 15:19:16,131 [INFO] Cleaning registries for queue: default
+2025-05-20 15:19:16,145 [INFO] Cleaning registries for queue: default
